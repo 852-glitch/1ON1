@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { Brain, Compass, Activity, Mail, MapPin, ArrowRight } from 'lucide-react';
-import { BrowserRouter, Routes, Route, useNavigate } from 'react-router-dom';
+import { HashRouter, Routes, Route, useNavigate } from 'react-router-dom';
 import LiquidBanner from './components/LiquidBanner';
 import ThankYou from './pages/ThankYou';
 
@@ -171,11 +171,11 @@ const LandingPage = () => {
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/thank-you" element={<ThankYou />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
