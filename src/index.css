@@ -14,6 +14,8 @@
   --color-on-surface: #e3e2e8;
   --color-on-surface-variant: #c4c6cc;
   --color-outline-variant: #44474c;
+    --color-black: #000000;
+  --color-white: #ffffff;
 }
 
 @layer base {
